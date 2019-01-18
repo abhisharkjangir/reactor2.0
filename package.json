@@ -31,8 +31,17 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start-app": "react-scripts start",
+    "start": "set REACT_APP_ENV=local&& npm run start-app",
+    "start:local": "set REACT_APP_ENV=local&& npm run start-app",
+    "start:stag": "set REACT_APP_ENV=stag&& npm run start-app",
+    "start:prod": "set REACT_APP_ENV=prod&& npm run start-app",
+    "https" : "set HTTPS=true && npm start",
+    "build-app": "react-scripts build",
+    "build:local": "set REACT_APP_ENV=local&& npm run build-app",
+    "build": "set REACT_APP_ENV=local&& npm run build-app",
+    "build:stag": "set REACT_APP_ENV=stag&& npm run build-app",
+    "build:prod": "set REACT_APP_ENV=prod&& npm run build-app",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "cross-env NODE_ENV=production node ./server/index.js"
