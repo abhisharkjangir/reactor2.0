@@ -1,13 +1,9 @@
-// The basics
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
-
-// Action creators and helpers
 import { isServer } from '../store';
 import Header from './components/header';
 import Routes from './routes';
-
 import './styles/main.scss';
 
 class App extends Component {
@@ -25,7 +21,6 @@ class App extends Component {
 }
 
 const mapStateToProps = state => ({});
-
 
 export default withRouter(
   connect(
