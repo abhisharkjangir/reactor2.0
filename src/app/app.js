@@ -8,7 +8,7 @@ import { isServer } from '../store';
 import Header from './components/header';
 import Routes from './routes';
 
-import './styles/main.css';
+import './styles/main.scss';
 
 class App extends Component {
 
