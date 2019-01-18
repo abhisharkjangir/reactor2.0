@@ -1,13 +1,12 @@
-import React from 'react';
-import { render, hydrate } from 'react-dom';
-import { Provider } from 'react-redux';
-import Loadable from 'react-loadable';
-import { Frontload } from 'react-frontload';
-import { ConnectedRouter } from 'connected-react-router';
-import createStore from './store';
-import * as serviceWorker from './serviceWorker';
-import App from './app/app';
-
+import React from "react";
+import { render, hydrate } from "react-dom";
+import { Provider } from "react-redux";
+import Loadable from "react-loadable";
+import { Frontload } from "react-frontload";
+import { ConnectedRouter } from "connected-react-router";
+import createStore from "./store";
+import * as serviceWorker from "./serviceWorker";
+import App from "./app/app";
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
@@ -29,7 +28,7 @@ const Application = (
   </Provider>
 );
 
-const root = document.querySelector('#root');
+const root = document.querySelector("#root");
 
 if (root.hasChildNodes() === true) {
   // If it's an SSR, we use hydrate to get fast page loads by just

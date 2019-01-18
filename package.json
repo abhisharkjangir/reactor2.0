@@ -15,6 +15,7 @@
     "forcedomain": "^1.0.0",
     "ignore-styles": "^5.0.1",
     "js-cookie": "^2.2.0",
+    "lint-staged": "^8.1.0",
     "md5-file": "^4.0.0",
     "morgan": "^1.9.1",
     "node-sass": "^4.11.0",
@@ -36,7 +37,7 @@
     "start:local": "set REACT_APP_ENV=local&& npm run start-app",
     "start:stag": "set REACT_APP_ENV=stag&& npm run start-app",
     "start:prod": "set REACT_APP_ENV=prod&& npm run start-app",
-    "https" : "set HTTPS=true && npm start",
+    "https": "set HTTPS=true && npm start",
     "build-app": "react-scripts build",
     "build:local": "set REACT_APP_ENV=local&& npm run build-app",
     "build": "set REACT_APP_ENV=local&& npm run build-app",
@@ -57,9 +58,15 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
-    "husky": "^1.1.0",
-    "prettier": "1.14.3",
+    "husky": "^1.3.1",
+    "prettier": "^1.15.3",
     "pretty-quick": "^1.7.0"
   }
 }
