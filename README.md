@@ -6,13 +6,13 @@
  - Redux
  - Bootstraped with create-react-app
  - SEO
- 
+ - Sass
+
 ### Coming Soon
 - Sagas
 - Reselect
 - Progressive Web App
 - Bootstrap
-- Sass
 - Test Cases
 - Different Environment Support(i.e: Local, Staging, Production)
 - Server Cookies
