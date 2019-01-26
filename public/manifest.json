@@ -4,12 +4,12 @@
   "description": "2.0",
   "icons": [
     {
-      "src": "./favicon.ico",
-      "sizes": "64x64",
-      "type": "image/ico"
+      "src": "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "https://reactor.imabhi.in/",
   "display": "standalone",
   "theme_color": "#35ddb3",
   "background_color": "#ffffff"
