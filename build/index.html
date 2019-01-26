@@ -7,15 +7,15 @@
       content="width=device-width,initial-scale=1,shrink-to-fit=no"
     />
     <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="./manifest.json" />
-    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <title>React App</title>
     <style>
       img {
         border-radius: 50%;
       }
     </style>
-    <link href="./static/css/main.0fb0cfcd.chunk.css" rel="stylesheet" />
+    <link href="/static/css/main.0fb0cfcd.chunk.css" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
@@ -27,24 +27,24 @@
             i < n.length;
             i++
           )
-            (r = n[i]), l[r] && a.push(l[r][0]), (l[r] = 0);
+            (r = n[i]), f[r] && a.push(f[r][0]), (f[r] = 0);
           for (t in o)
             Object.prototype.hasOwnProperty.call(o, t) && (c[t] = o[t]);
           for (d && d(e); a.length; ) a.shift()();
-          return p.push.apply(p, u || []), f();
+          return p.push.apply(p, u || []), l();
         }
-        function f() {
+        function l() {
           for (var e, t = 0; t < p.length; t++) {
             for (var r = p[t], n = !0, o = 1; o < r.length; o++) {
               var u = r[o];
-              0 !== l[u] && (n = !1);
+              0 !== f[u] && (n = !1);
             }
             n && (p.splice(t--, 1), (e = s((s.s = r[0]))));
           }
           return e;
         }
         var r = {},
-          l = { 5: 0 },
+          f = { 5: 0 },
           p = [];
         function s(e) {
           if (r[e]) return r[e].exports;
@@ -53,12 +53,12 @@
         }
         (s.e = function(u) {
           var e = [],
-            r = l[u];
+            r = f[u];
           if (0 !== r)
             if (r) e.push(r[2]);
             else {
               var t = new Promise(function(e, t) {
-                r = l[u] = [e, t];
+                r = f[u] = [e, t];
               });
               e.push((r[2] = t));
               var n,
@@ -72,11 +72,11 @@
                   "static/js/" +
                   ({ 1: "homepage", 2: "about" }[u] || u) +
                   "." +
-                  { 1: "fbf04680", 2: "758ed691", 4: "f0f5536e" }[u] +
+                  { 1: "eae5db51", 2: "758ed691", 4: "f0f5536e" }[u] +
                   ".chunk.js"),
                 (n = function(e) {
                   (i.onerror = i.onload = null), clearTimeout(a);
-                  var t = l[u];
+                  var t = f[u];
                   if (0 !== t) {
                     if (t) {
                       var r = e && ("load" === e.type ? "missing" : e.type),
@@ -92,7 +92,7 @@
                         );
                       (o.type = r), (o.request = n), t[1](o);
                     }
-                    l[u] = void 0;
+                    f[u] = void 0;
                   }
                 });
               var a = setTimeout(function() {
@@ -147,7 +147,7 @@
           (s.o = function(e, t) {
             return Object.prototype.hasOwnProperty.call(e, t);
           }),
-          (s.p = "./"),
+          (s.p = "/"),
           (s.oe = function(e) {
             throw (console.error(e), e);
           });
@@ -156,9 +156,9 @@
         (t.push = e), (t = t.slice());
         for (var o = 0; o < t.length; o++) e(t[o]);
         var d = n;
-        f();
+        l();
       })([]);</script
-    ><script src="./static/js/3.cfcd4c59.chunk.js"></script
-    ><script src="./static/js/main.772393e7.chunk.js"></script>
+    ><script src="/static/js/3.cfcd4c59.chunk.js"></script
+    ><script src="/static/js/main.940e00a0.chunk.js"></script>
   </body>
 </html>

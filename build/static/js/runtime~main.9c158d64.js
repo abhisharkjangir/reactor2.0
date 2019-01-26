@@ -50,7 +50,7 @@
               "static/js/" +
               ({ 1: "homepage", 2: "about" }[e] || e) +
               "." +
-              { 1: "fbf04680", 2: "758ed691", 4: "f0f5536e" }[e] +
+              { 1: "eae5db51", 2: "758ed691", 4: "f0f5536e" }[e] +
               ".chunk.js"
             );
           })(e)),
@@ -120,7 +120,7 @@
     (i.o = function(e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (i.p = "./"),
+    (i.p = "/"),
     (i.oe = function(e) {
       throw (console.error(e), e);
     });
@@ -131,4 +131,4 @@
   var l = c;
   r();
 })([]);
-//# sourceMappingURL=runtime~main.851aee82.js.map
+//# sourceMappingURL=runtime~main.9c158d64.js.map

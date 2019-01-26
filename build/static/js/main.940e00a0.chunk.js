@@ -39,13 +39,13 @@
                     u = e.category,
                     d = e.tags,
                     p = n
-                      ? (n + " | My Website").substring(0, 60)
-                      : "My Website",
+                      ? (n + " | Reactor 2.0").substring(0, 60)
+                      : "Reactor 2.0",
                     m = o
                       ? o.substring(0, 155)
-                      : "This is a really awesome website where we can render on the server. Supa cool.",
+                      : "Cool app that can be rendered on server side!",
                     f = a ? "".concat("").concat(a) : h,
-                    b = [
+                    g = [
                       { itemprop: "name", content: p },
                       { itemprop: "description", content: m },
                       { itemprop: "image", content: f },
@@ -64,17 +64,17 @@
                       { property: "og:url", content: "" + t },
                       { property: "og:image", content: f },
                       { property: "og:description", content: m },
-                      { property: "og:site_name", content: "My Website" },
+                      { property: "og:site_name", content: "Reactor 2.0" },
                       { property: "fb:app_id", content: "XXXXXXXXX" }
                     ];
                   return (
                     c &&
-                      b.push({ name: "robots", content: "noindex, nofollow" }),
-                    l && b.push({ name: "article:published_time", content: l }),
-                    s && b.push({ name: "article:modified_time", content: s }),
-                    u && b.push({ name: "article:section", content: u }),
-                    d && b.push({ name: "article:tag", content: d }),
-                    b
+                      g.push({ name: "robots", content: "noindex, nofollow" }),
+                    l && g.push({ name: "article:published_time", content: l }),
+                    s && g.push({ name: "article:modified_time", content: s }),
+                    u && g.push({ name: "article:section", content: u }),
+                    d && g.push({ name: "article:tag", content: d }),
+                    g
                   );
                 }
               },
@@ -97,7 +97,9 @@
                           r.schema || "WebPage"
                         )
                       },
-                      title: r.title ? r.title + " | My Website" : "My Website",
+                      title: r.title
+                        ? r.title + " | Reactor 2.0"
+                        : "Reactor 2.0",
                       link: [
                         {
                           rel: "canonical",
@@ -136,7 +138,7 @@
         m = n(143),
         h = n(58),
         f = { home: "HomePage" },
-        b = Object(d.c)(
+        g = Object(d.c)(
           Object(m.a)({}, h.b, function() {
             var e =
                 arguments.length > 0 && void 0 !== arguments[0]
@@ -153,12 +155,12 @@
             }
           })
         ),
-        w = !(
+        b = !(
           "undefined" !== typeof window &&
           window.document &&
           window.document.createElement
         ),
-        g = Boolean(
+        w = Boolean(
           "localhost" === window.location.hostname ||
             "[::1]" === window.location.hostname ||
             window.location.hostname.match(
@@ -193,24 +195,25 @@
         O = n(74),
         j = n(73),
         _ = n(75),
-        k = (n(164), n(372)),
-        W = function() {
+        R = (n(164), n(372)),
+        k = function() {
           return a.a.createElement(
             "header",
             { id: "header" },
-            a.a.createElement(k.a, { to: "/" }, " Home "),
+            a.a.createElement("h1", null, "Reactor 2.0"),
+            a.a.createElement(R.a, { to: "/" }, " Home "),
             " |",
-            a.a.createElement(k.a, { to: "/about" }, " About "),
+            a.a.createElement(R.a, { to: "/about" }, " About "),
             " |",
-            a.a.createElement(k.a, { to: "/not-found" }, " Not Found ")
+            a.a.createElement(R.a, { to: "/not-found" }, " Not Found ")
           );
         },
         A = n(373),
         S = n(374),
-        T = n(107),
-        R = function() {
+        C = n(107),
+        T = function() {
           return a.a.createElement(
-            T.a,
+            C.a,
             {
               id: "not-found",
               title: "Not Found",
@@ -220,7 +223,7 @@
             a.a.createElement("p", null, "Super embarrassing.")
           );
         },
-        C = l()({
+        X = l()({
           loader: function() {
             return Promise.all([n.e(4), n.e(1)]).then(n.bind(null, 376));
           },
@@ -228,7 +231,7 @@
             return null;
           }
         }),
-        M = l()({
+        N = l()({
           loader: function() {
             return n.e(2).then(n.bind(null, 375));
           },
@@ -236,16 +239,16 @@
             return null;
           }
         }),
-        X = function() {
+        P = function() {
           return a.a.createElement(
             A.a,
             null,
-            a.a.createElement(S.a, { exact: !0, path: "/", component: C }),
-            a.a.createElement(S.a, { exact: !0, path: "/about", component: M }),
-            a.a.createElement(S.a, { component: R })
+            a.a.createElement(S.a, { exact: !0, path: "/", component: X }),
+            a.a.createElement(S.a, { exact: !0, path: "/about", component: N }),
+            a.a.createElement(S.a, { component: T })
           );
         },
-        N = (n(337),
+        W = (n(337),
         (function(e) {
           function t() {
             return (
@@ -262,11 +265,11 @@
                   return a.a.createElement(
                     "div",
                     { id: "app" },
-                    a.a.createElement(W, null),
+                    a.a.createElement(k, null),
                     a.a.createElement(
                       "div",
                       { id: "content" },
-                      a.a.createElement(X, null)
+                      a.a.createElement(P, null)
                     )
                   );
                 }
@@ -278,12 +281,12 @@
       !(function(e) {
         if ("serviceWorker" in navigator) {
           if (
-            new URL(".", window.location.href).origin !== window.location.origin
+            new URL("", window.location.href).origin !== window.location.origin
           )
             return;
           window.addEventListener("load", function() {
-            var t = "".concat(".", "/service-worker.js");
-            g
+            var t = "".concat("", "/service-worker.js");
+            w
               ? ((function(e, t) {
                   fetch(e)
                     .then(function(n) {
@@ -312,44 +315,44 @@
           });
         }
       })();
-      var P = (function() {
+      var x = (function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
                 : "/",
-            t = w ? Object(p.c)({ initialEntries: [e] }) : Object(p.a)(),
+            t = b ? Object(p.c)({ initialEntries: [e] }) : Object(p.a)(),
             n = [Object(u.routerMiddleware)(t)],
             o = d.d.apply(void 0, [d.a.apply(void 0, n)].concat([])),
-            a = w ? {} : window.__PRELOADED_STATE__;
+            a = b ? {} : window.__PRELOADED_STATE__;
           return (
-            w || delete window.__PRELOADED_STATE__,
+            b || delete window.__PRELOADED_STATE__,
             {
-              store: Object(d.e)(Object(u.connectRouter)(t)(b), a, o),
+              store: Object(d.e)(Object(u.connectRouter)(t)(g), a, o),
               history: t
             }
           );
         })(),
-        x = P.store,
-        D = P.history,
-        L = a.a.createElement(
+        D = x.store,
+        L = x.history,
+        M = a.a.createElement(
           i.Provider,
-          { store: x },
+          { store: D },
           a.a.createElement(
             u.ConnectedRouter,
-            { history: D },
+            { history: L },
             a.a.createElement(
               s.Frontload,
               { noServerRender: !0 },
-              a.a.createElement(N, null)
+              a.a.createElement(W, null)
             )
           )
         ),
         U = document.querySelector("#root");
       !0 === U.hasChildNodes()
         ? l.a.preloadReady().then(function() {
-            Object(r.hydrate)(L, U);
+            Object(r.hydrate)(M, U);
           })
-        : Object(r.render)(L, U);
+        : Object(r.render)(M, U);
     },
     58: function(e, t, n) {
       "use strict";
@@ -365,4 +368,4 @@
   },
   [[147, 5, 3]]
 ]);
-//# sourceMappingURL=main.772393e7.chunk.js.map
+//# sourceMappingURL=main.940e00a0.chunk.js.map
