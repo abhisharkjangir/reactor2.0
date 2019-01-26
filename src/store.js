@@ -1,17 +1,16 @@
-import { createStore, applyMiddleware, compose } from 'redux';
-import { connectRouter, routerMiddleware } from 'connected-react-router';
-import thunk from 'redux-thunk';
-import { createBrowserHistory, createMemoryHistory } from 'history';
-import rootReducer from './rootReducer';
+import { createStore, applyMiddleware, compose } from "redux";
+import { connectRouter, routerMiddleware } from "connected-react-router";
+import { createBrowserHistory, createMemoryHistory } from "history";
+import rootReducer from "./rootReducer";
 
 // A nice helper to tell us if we're on the server
 export const isServer = !(
-  typeof window !== 'undefined' &&
+  typeof window !== "undefined" &&
   window.document &&
   window.document.createElement
 );
 
-export default (url = '/') => {
+export default (url = "/") => {
   // Create a history depending on the environment
   const history = isServer
     ? createMemoryHistory({
@@ -22,15 +21,15 @@ export default (url = '/') => {
   const enhancers = [];
 
   // Dev tools are helpful
-  if (process.env.NODE_ENV === 'development' && !isServer) {
-    const devToolsExtension = window.devToolsExtension;
+  if (process.env.NODE_ENV === "development" && !isServer) {
+    const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
 
-    if (typeof devToolsExtension === 'function') {
+    if (typeof devToolsExtension === "function") {
       enhancers.push(devToolsExtension());
     }
   }
 
-  const middleware = [thunk, routerMiddleware(history)];
+  const middleware = [routerMiddleware(history)];
   const composedEnhancers = compose(
     applyMiddleware(...middleware),
     ...enhancers

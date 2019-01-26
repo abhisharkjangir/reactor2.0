@@ -4,20 +4,13 @@ import axios from "axios";
 import { withRouter } from "react-router";
 import { frontloadConnect } from "react-frontload";
 import Page from "../../components/page";
-import { mapStateToProps, mapDispatchToProps } from "./homecontainer";
+import { saveUsers } from "./HomeActions";
+import { selectUsers } from "./HomeSelectors";
 
 class Home extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.fetchUsers = this.fetchUsers.bind(this);
-    this.fetchUsers();
-  }
-
-  fetchUsers() {
-    let { saveUsers } = this.props;
-    axios.get("https://reqres.in/api/users?page=2").then(res => {
-      saveUsers(res.data.data);
-    });
+    this.state = {};
   }
 
   render() {
@@ -42,10 +35,22 @@ class Home extends React.PureComponent {
 }
 
 const frontload = async props => {
-  let { saveUsers } = props;
-  await axios.get("https://reqres.in/api/users?page=2").then(res => {
-    saveUsers(res.data.data);
-  });
+  let { saveUsers, users } = props;
+  if (!users) {
+    await axios.get("https://reqres.in/api/users?page=2").then(res => {
+      saveUsers(res.data.data);
+    });
+  }
+};
+
+const mapStateToProps = state => ({
+  users: selectUsers(state)
+});
+
+const mapDispatchToProps = dispatch => {
+  return {
+    saveUsers: users => dispatch(saveUsers(users))
+  };
 };
 
 export default withRouter(

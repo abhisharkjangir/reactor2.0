@@ -1,7 +1,9 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
-import home from './app/routes/home/homecontainer';
+// Home Reducer
+import { HOME_STATE_KEY } from "./app/routes/home/HomeConstants";
+import HomeReducer from "./app/routes/home/HomeReducer";
 
 export default combineReducers({
-  home
+  [HOME_STATE_KEY]: HomeReducer
 });

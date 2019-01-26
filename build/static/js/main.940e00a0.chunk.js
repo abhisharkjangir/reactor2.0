@@ -1,37 +1,37 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [0],
   {
-    24: function(e, t, n) {
+    107: function(e, t, n) {
       "use strict";
-      var o = n(37),
-        r = n(16),
-        a = n(17),
-        i = n(20),
-        c = n(18),
-        l = n(19),
-        s = n(1),
+      var o = n(145),
+        a = n(71),
+        r = n(72),
+        i = n(74),
+        c = n(73),
+        l = n(75),
+        s = n(2),
         u = n.n(s),
-        d = n(26),
-        p = n(35),
+        d = n(109),
+        p = n(144),
         m = n.n(p),
         h = "".concat(""),
         f = (function(e) {
           function t() {
             return (
-              Object(r.a)(this, t),
+              Object(a.a)(this, t),
               Object(i.a)(this, Object(c.a)(t).apply(this, arguments))
             );
           }
           return (
             Object(l.a)(t, e),
-            Object(a.a)(t, [
+            Object(r.a)(t, [
               {
                 key: "getMetaTags",
                 value: function(e, t) {
                   var n = e.title,
                     o = e.description,
-                    r = e.image,
-                    a = e.contentType,
+                    a = e.image,
+                    r = e.contentType,
                     i = e.twitter,
                     c = e.noCrawl,
                     l = e.published,
@@ -39,13 +39,13 @@
                     u = e.category,
                     d = e.tags,
                     p = n
-                      ? (n + " | My Website").substring(0, 60)
-                      : "My Website",
+                      ? (n + " | Reactor 2.0").substring(0, 60)
+                      : "Reactor 2.0",
                     m = o
                       ? o.substring(0, 155)
-                      : "This is a really awesome website where we can render on the server. Supa cool.",
-                    f = r ? "".concat("").concat(r) : h,
-                    b = [
+                      : "Cool app that can be rendered on server side!",
+                    f = a ? "".concat("").concat(a) : h,
+                    g = [
                       { itemprop: "name", content: p },
                       { itemprop: "description", content: m },
                       { itemprop: "image", content: f },
@@ -60,21 +60,21 @@
                       },
                       { name: "twitter:image:src", content: f },
                       { property: "og:title", content: p },
-                      { property: "og:type", content: a || "website" },
+                      { property: "og:type", content: r || "website" },
                       { property: "og:url", content: "" + t },
                       { property: "og:image", content: f },
                       { property: "og:description", content: m },
-                      { property: "og:site_name", content: "My Website" },
+                      { property: "og:site_name", content: "Reactor 2.0" },
                       { property: "fb:app_id", content: "XXXXXXXXX" }
                     ];
                   return (
                     c &&
-                      b.push({ name: "robots", content: "noindex, nofollow" }),
-                    l && b.push({ name: "article:published_time", content: l }),
-                    s && b.push({ name: "article:modified_time", content: s }),
-                    u && b.push({ name: "article:section", content: u }),
-                    d && b.push({ name: "article:tag", content: d }),
-                    b
+                      g.push({ name: "robots", content: "noindex, nofollow" }),
+                    l && g.push({ name: "article:published_time", content: l }),
+                    s && g.push({ name: "article:modified_time", content: s }),
+                    u && g.push({ name: "article:section", content: u }),
+                    d && g.push({ name: "article:tag", content: d }),
+                    g
                   );
                 }
               },
@@ -84,27 +84,29 @@
                   var e = this.props,
                     t = e.children,
                     n = e.id,
-                    r = e.className,
-                    a = Object(o.a)(e, ["children", "id", "className"]);
+                    a = e.className,
+                    r = Object(o.a)(e, ["children", "id", "className"]);
                   return u.a.createElement(
                     "div",
-                    { id: n, className: r },
+                    { id: n, className: a },
                     u.a.createElement(m.a, {
                       htmlAttributes: {
                         lang: "en",
                         itemscope: void 0,
                         itemtype: "http://schema.org/".concat(
-                          a.schema || "WebPage"
+                          r.schema || "WebPage"
                         )
                       },
-                      title: a.title ? a.title + " | My Website" : "My Website",
+                      title: r.title
+                        ? r.title + " | Reactor 2.0"
+                        : "Reactor 2.0",
                       link: [
                         {
                           rel: "canonical",
                           href: "" + this.props.location.pathname
                         }
                       ],
-                      meta: this.getMetaTags(a, this.props.location.pathname)
+                      meta: this.getMetaTags(r, this.props.location.pathname)
                     }),
                     t
                   );
@@ -116,64 +118,43 @@
         })(s.Component);
       t.a = Object(d.a)(f);
     },
-    29: function(e, t, n) {
-      "use strict";
-      n.d(t, "c", function() {
-        return r;
-      }),
-        n.d(t, "b", function() {
-          return a;
-        });
-      var o = n(36),
-        r = function(e) {
-          return Object(o.a)({}, e.home);
-        },
-        a = function(e) {
-          return {
-            saveUsers: function(t) {
-              return e(
-                (function(e) {
-                  return { type: "SAVE_USERS", payload: e };
-                })(t)
-              );
-            }
-          };
-        },
-        i = { page: "home" };
-      t.a = function() {
-        var e =
-            arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : i,
-          t = arguments.length > 1 ? arguments[1] : void 0,
-          n = t.type,
-          o = t.payload;
-        switch (n) {
-          case "SAVE_USERS":
-            return Object.assign({}, e, { users: o });
-          default:
-            return e;
-        }
-      };
+    147: function(e, t, n) {
+      e.exports = n(339);
     },
-    39: function(e, t, n) {
-      e.exports = n(65);
-    },
-    63: function(e, t, n) {},
-    65: function(e, t, n) {
+    337: function(e, t, n) {},
+    339: function(e, t, n) {
       "use strict";
       n.r(t);
-      var o = n(1),
-        r = n.n(o),
-        a = n(27),
-        i = n(10),
-        c = n(11),
+      var o = n(2),
+        a = n.n(o),
+        r = n(110),
+        i = n(105),
+        c = n(55),
         l = n.n(c),
-        s = n(25),
-        u = n(12),
-        d = n(7),
-        p = n(34),
-        m = n(5),
-        h = n(29),
-        f = Object(d.c)({ home: h.a }),
+        s = n(108),
+        u = n(56),
+        d = n(35),
+        p = n(15),
+        m = n(143),
+        h = n(58),
+        f = { home: "HomePage" },
+        g = Object(d.c)(
+          Object(m.a)({}, h.b, function() {
+            var e =
+                arguments.length > 0 && void 0 !== arguments[0]
+                  ? arguments[0]
+                  : f,
+              t = arguments.length > 1 ? arguments[1] : void 0,
+              n = t.type,
+              o = t.payload;
+            switch (n) {
+              case h.a:
+                return Object.assign({}, e, { users: o });
+              default:
+                return e;
+            }
+          })
+        ),
         b = !(
           "undefined" !== typeof window &&
           window.document &&
@@ -186,7 +167,7 @@
               /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
             )
         );
-      function g(e, t) {
+      function v(e, t) {
         navigator.serviceWorker
           .register(e)
           .then(function(e) {
@@ -209,77 +190,86 @@
             console.error("Error during service worker registration:", e);
           });
       }
-      var v = n(16),
-        y = n(17),
-        E = n(20),
-        O = n(18),
-        j = n(19),
-        _ = n(26),
-        S = function() {
-          return r.a.createElement("header", { id: "header" }, "Header");
+      var y = n(71),
+        E = n(72),
+        O = n(74),
+        j = n(73),
+        _ = n(75),
+        R = (n(164), n(372)),
+        k = function() {
+          return a.a.createElement(
+            "header",
+            { id: "header" },
+            a.a.createElement("h1", null, "Reactor 2.0"),
+            a.a.createElement(R.a, { to: "/" }, " Home "),
+            " |",
+            a.a.createElement(R.a, { to: "/about" }, " About "),
+            " |",
+            a.a.createElement(R.a, { to: "/not-found" }, " Not Found ")
+          );
         },
-        k = n(97),
-        W = n(98),
-        A = n(24),
-        R = function() {
-          return r.a.createElement(
-            A.a,
+        A = n(373),
+        S = n(374),
+        C = n(107),
+        T = function() {
+          return a.a.createElement(
+            C.a,
             {
               id: "not-found",
               title: "Not Found",
               description: "This is embarrassing.",
               noCrawl: !0
             },
-            r.a.createElement("p", null, "Super embarrassing.")
+            a.a.createElement("p", null, "Super embarrassing.")
           );
         },
-        T = l()({
+        X = l()({
           loader: function() {
-            return Promise.all([n.e(4), n.e(1)]).then(n.bind(null, 99));
+            return Promise.all([n.e(4), n.e(1)]).then(n.bind(null, 376));
           },
           loading: function() {
             return null;
           }
         }),
-        C = l()({
+        N = l()({
           loader: function() {
-            return n.e(2).then(n.bind(null, 100));
+            return n.e(2).then(n.bind(null, 375));
           },
           loading: function() {
             return null;
           }
         }),
-        X = function() {
-          return r.a.createElement(
-            k.a,
+        P = function() {
+          return a.a.createElement(
+            A.a,
             null,
-            r.a.createElement(W.a, { exact: !0, path: "/", component: T }),
-            r.a.createElement(W.a, { exact: !0, path: "/about", component: C }),
-            r.a.createElement(W.a, { component: R })
+            a.a.createElement(S.a, { exact: !0, path: "/", component: X }),
+            a.a.createElement(S.a, { exact: !0, path: "/about", component: N }),
+            a.a.createElement(S.a, { component: T })
           );
         },
-        M = (n(63),
+        W = (n(337),
         (function(e) {
           function t() {
             return (
-              Object(v.a)(this, t),
-              Object(E.a)(this, Object(O.a)(t).apply(this, arguments))
+              Object(y.a)(this, t),
+              Object(O.a)(this, Object(j.a)(t).apply(this, arguments))
             );
           }
           return (
-            Object(j.a)(t, e),
-            Object(y.a)(t, [
+            Object(_.a)(t, e),
+            Object(E.a)(t, [
               {
                 key: "render",
                 value: function() {
-                  return r.a.createElement(
+                  return a.a.createElement(
                     "div",
                     { id: "app" },
-                    r.a.createElement(S, null),
-                    r.a.createElement(
+                    a.a.createElement(k, null),
+                    a.a.createElement(
                       "div",
                       { id: "content" },
-                      r.a.createElement(X, null)
+                      a.a.createElement(P, null)
                     )
                   );
                 }
@@ -287,12 +277,7 @@
             ]),
             t
           );
-        })(o.Component)),
-        N = Object(_.a)(
-          Object(i.connect)(function(e) {
-            return {};
-          }, null)(M)
-        );
+        })(o.Component));
       !(function(e) {
         if ("serviceWorker" in navigator) {
           if (
@@ -313,7 +298,7 @@
                               window.location.reload();
                             });
                           })
-                        : g(e, t);
+                        : v(e, t);
                     })
                     .catch(function() {
                       console.log(
@@ -326,50 +311,61 @@
                     "This web app is being served cache-first by a service worker. To learn more, visit http://bit.ly/CRA-PWA"
                   );
                 }))
-              : g(t, e);
+              : v(t, e);
           });
         }
       })();
-      var P = (function() {
+      var x = (function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
                 : "/",
-            t = b ? Object(m.c)({ initialEntries: [e] }) : Object(m.a)(),
-            n = [p.a, Object(u.routerMiddleware)(t)],
+            t = b ? Object(p.c)({ initialEntries: [e] }) : Object(p.a)(),
+            n = [Object(u.routerMiddleware)(t)],
             o = d.d.apply(void 0, [d.a.apply(void 0, n)].concat([])),
-            r = b ? {} : window.__PRELOADED_STATE__;
+            a = b ? {} : window.__PRELOADED_STATE__;
           return (
             b || delete window.__PRELOADED_STATE__,
             {
-              store: Object(d.e)(Object(u.connectRouter)(t)(f), r, o),
+              store: Object(d.e)(Object(u.connectRouter)(t)(g), a, o),
               history: t
             }
           );
         })(),
-        U = P.store,
-        x = P.history,
-        D = r.a.createElement(
+        D = x.store,
+        L = x.history,
+        M = a.a.createElement(
           i.Provider,
-          { store: U },
-          r.a.createElement(
+          { store: D },
+          a.a.createElement(
             u.ConnectedRouter,
-            { history: x },
-            r.a.createElement(
+            { history: L },
+            a.a.createElement(
               s.Frontload,
               { noServerRender: !0 },
-              r.a.createElement(N, null)
+              a.a.createElement(W, null)
             )
           )
         ),
-        L = document.querySelector("#root");
-      !0 === L.hasChildNodes()
+        U = document.querySelector("#root");
+      !0 === U.hasChildNodes()
         ? l.a.preloadReady().then(function() {
-            Object(a.hydrate)(D, L);
+            Object(r.hydrate)(M, U);
           })
-        : Object(a.render)(D, L);
+        : Object(r.render)(M, U);
+    },
+    58: function(e, t, n) {
+      "use strict";
+      n.d(t, "b", function() {
+        return o;
+      }),
+        n.d(t, "a", function() {
+          return a;
+        });
+      var o = "home",
+        a = "HOME_SAVE_USERS";
     }
   },
-  [[39, 5, 3]]
+  [[147, 5, 3]]
 ]);
-//# sourceMappingURL=main.210b89bc.chunk.js.map
+//# sourceMappingURL=main.940e00a0.chunk.js.map
