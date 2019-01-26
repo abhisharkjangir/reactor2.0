@@ -1,6 +1,9 @@
 # Reactor 2.0
 
+### Live @ https://reactor.imabhi.in/
+
 ### Features
+
 - Server Side Rendering
 - React Router Dom
 - Redux
@@ -10,11 +13,12 @@
 - Different Environment Support(i.e: Local, Staging, Production)`
 - Progressive Web App
 - Code Splitting
--
+- Reselect
 
 ### Coming Soon
+
+- Immutable
 - Sagas
-- Reselect
 - Bootstrap
 - Test Cases
 - Server Cookies

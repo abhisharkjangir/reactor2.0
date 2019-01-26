@@ -7,9 +7,8 @@ const SITE_URL =
 
 const FACEBOOK_APP_ID = "XXXXXXXXX";
 
-const defaultTitle = "My Website";
-const defaultDescription =
-  "This is a really awesome website where we can render on the server. Supa cool.";
+const defaultTitle = "Reactor 2.0";
+const defaultDescription = "Cool app that can be rendered on server side!";
 const defaultImage = `${SITE_URL}`; //`${SITE_URL}${logo}`
 const defaultTwitter = "@cereallarceny";
 const defaultSep = " | ";
