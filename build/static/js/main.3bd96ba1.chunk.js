@@ -350,7 +350,7 @@
         U = document.querySelector("#root");
       !0 === U.hasChildNodes()
         ? l.a.preloadReady().then(function() {
-            Object(r.render)(M, U);
+            Object(r.hydrate)(M, U);
           })
         : Object(r.render)(M, U);
     },
@@ -368,4 +368,4 @@
   },
   [[147, 5, 3]]
 ]);
-//# sourceMappingURL=main.9ff684d0.chunk.js.map
+//# sourceMappingURL=main.3bd96ba1.chunk.js.map
