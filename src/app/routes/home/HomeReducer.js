@@ -1,6 +1,8 @@
+import { fromJS } from "immutable";
+
 import { HOME_SAVE_USERS } from "./HomeConstants";
 
-const initialState = { home: "HomePage" };
+const initialState = fromJS({ home: "HomePage" });
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {

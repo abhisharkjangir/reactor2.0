@@ -13,10 +13,10 @@
 - Different Environment Support(i.e: Local, Staging, Production)`
 - Progressive Web App
 - Code Splitting
-- Reselect
 
 ### Coming Soon
 
+- Reselect
 - Immutable
 - Sagas
 - Bootstrap

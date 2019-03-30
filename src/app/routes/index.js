@@ -5,7 +5,7 @@ import Loadable from "react-loadable";
 import NotFound from "./not-found";
 
 const Homepage = Loadable({
-  loader: () => import(/* webpackChunkName: "homepage" */ "./home/home"),
+  loader: () => import(/* webpackChunkName: "home" */ "./home/home"),
   loading: () => null
 });
 
