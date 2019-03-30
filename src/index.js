@@ -1,12 +1,11 @@
 import React from "react";
-import { render, hydrate } from "react-dom";
+import { render } from "react-dom";
 import { Provider } from "react-redux";
-import Loadable from "react-loadable";
 import { Frontload } from "react-frontload";
-import { ConnectedRouter } from "connected-react-router";
+import { ConnectedRouter } from "react-router-redux";
 import createStore from "./store";
 import * as serviceWorker from "./serviceWorker";
-import App from "./app/app";
+import App from "./app";
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
@@ -33,9 +32,9 @@ const root = document.querySelector("#root");
 if (root.hasChildNodes() === true) {
   // If it's an SSR, we use hydrate to get fast page loads by just
   // attaching event listeners after the initial render
-  Loadable.preloadReady().then(() => {
-    hydrate(Application, root);
-  });
+  // Loadable.preloadReady().then(() => {
+  //   hydrate(Application, root);
+  // });
 } else {
   // If we're not running on the server, just render like normal
   render(Application, root);

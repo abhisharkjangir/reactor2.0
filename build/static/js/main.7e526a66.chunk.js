@@ -1,9 +1,9 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [0],
   {
-    107: function(e, t, n) {
+    108: function(e, t, n) {
       "use strict";
-      var o = n(145),
+      var o = n(148),
         a = n(71),
         r = n(72),
         i = n(74),
@@ -11,8 +11,8 @@
         l = n(75),
         s = n(2),
         u = n.n(s),
-        d = n(109),
-        p = n(144),
+        d = n(110),
+        p = n(146),
         m = n.n(p),
         h = "".concat(""),
         f = (function(e) {
@@ -118,28 +118,28 @@
         })(s.Component);
       t.a = Object(d.a)(f);
     },
-    147: function(e, t, n) {
-      e.exports = n(339);
+    150: function(e, t, n) {
+      e.exports = n(342);
     },
-    337: function(e, t, n) {},
-    339: function(e, t, n) {
+    340: function(e, t, n) {},
+    342: function(e, t, n) {
       "use strict";
       n.r(t);
       var o = n(2),
         a = n.n(o),
-        r = n(110),
-        i = n(105),
-        c = n(55),
-        l = n.n(c),
-        s = n(108),
-        u = n(56),
-        d = n(35),
-        p = n(15),
-        m = n(143),
-        h = n(58),
-        f = { home: "HomePage" },
-        g = Object(d.c)(
-          Object(m.a)({}, h.b, function() {
+        r = n(141),
+        i = n(104),
+        c = n(109),
+        l = n(147),
+        s = n(35),
+        u = n(106),
+        d = n(15),
+        p = n(144),
+        m = n(58),
+        h = n(145),
+        f = Object(h.fromJS)({ home: "HomePage" }),
+        g = Object(s.c)(
+          Object(p.a)({}, m.b, function() {
             var e =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
@@ -148,7 +148,7 @@
               n = t.type,
               o = t.payload;
             switch (n) {
-              case h.a:
+              case m.a:
                 return Object.assign({}, e, { users: o });
               default:
                 return e;
@@ -195,25 +195,27 @@
         O = n(74),
         j = n(73),
         _ = n(75),
-        R = (n(164), n(372)),
-        k = function() {
+        k = (n(167), n(375)),
+        R = function() {
           return a.a.createElement(
             "header",
             { id: "header" },
             a.a.createElement("h1", null, "Reactor 2.0"),
-            a.a.createElement(R.a, { to: "/" }, " Home "),
+            a.a.createElement(k.a, { to: "/" }, " Home "),
             " |",
-            a.a.createElement(R.a, { to: "/about" }, " About "),
+            a.a.createElement(k.a, { to: "/about" }, " About "),
             " |",
-            a.a.createElement(R.a, { to: "/not-found" }, " Not Found ")
+            a.a.createElement(k.a, { to: "/not-found" }, " Not Found ")
           );
         },
-        A = n(373),
-        S = n(374),
-        C = n(107),
-        T = function() {
+        A = n(376),
+        S = n(377),
+        T = n(107),
+        C = n.n(T),
+        X = n(108),
+        N = function() {
           return a.a.createElement(
-            C.a,
+            X.a,
             {
               id: "not-found",
               title: "Not Found",
@@ -223,32 +225,32 @@
             a.a.createElement("p", null, "Super embarrassing.")
           );
         },
-        X = l()({
+        P = C()({
           loader: function() {
-            return Promise.all([n.e(4), n.e(1)]).then(n.bind(null, 376));
+            return Promise.all([n.e(4), n.e(1)]).then(n.bind(null, 379));
           },
           loading: function() {
             return null;
           }
         }),
-        N = l()({
+        W = C()({
           loader: function() {
-            return n.e(2).then(n.bind(null, 375));
+            return n.e(2).then(n.bind(null, 378));
           },
           loading: function() {
             return null;
           }
         }),
-        P = function() {
+        x = function() {
           return a.a.createElement(
             A.a,
             null,
-            a.a.createElement(S.a, { exact: !0, path: "/", component: X }),
-            a.a.createElement(S.a, { exact: !0, path: "/about", component: N }),
-            a.a.createElement(S.a, { component: T })
+            a.a.createElement(S.a, { exact: !0, path: "/", component: P }),
+            a.a.createElement(S.a, { exact: !0, path: "/about", component: W }),
+            a.a.createElement(S.a, { component: N })
           );
         },
-        W = (n(337),
+        D = (n(340),
         (function(e) {
           function t() {
             return (
@@ -265,11 +267,11 @@
                   return a.a.createElement(
                     "div",
                     { id: "app" },
-                    a.a.createElement(k, null),
+                    a.a.createElement(R, null),
                     a.a.createElement(
                       "div",
                       { id: "content" },
-                      a.a.createElement(P, null)
+                      a.a.createElement(x, null)
                     )
                   );
                 }
@@ -315,44 +317,40 @@
           });
         }
       })();
-      var x = (function() {
+      var L = (function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
                 : "/",
-            t = b ? Object(p.c)({ initialEntries: [e] }) : Object(p.a)(),
+            t = b ? Object(d.c)({ initialEntries: [e] }) : Object(d.a)(),
             n = [Object(u.routerMiddleware)(t)],
-            o = d.d.apply(void 0, [d.a.apply(void 0, n)].concat([])),
+            o = s.d.apply(void 0, [s.a.apply(void 0, n)].concat([])),
             a = b ? {} : window.__PRELOADED_STATE__;
           return (
             b || delete window.__PRELOADED_STATE__,
             {
-              store: Object(d.e)(Object(u.connectRouter)(t)(g), a, o),
+              store: Object(s.e)(Object(u.connectRouter)(t)(g), a, o),
               history: t
             }
           );
         })(),
-        D = x.store,
-        L = x.history,
-        M = a.a.createElement(
+        M = L.store,
+        U = L.history,
+        F = a.a.createElement(
           i.Provider,
-          { store: D },
+          { store: M },
           a.a.createElement(
-            u.ConnectedRouter,
-            { history: L },
+            l.a,
+            { history: U },
             a.a.createElement(
-              s.Frontload,
+              c.Frontload,
               { noServerRender: !0 },
-              a.a.createElement(W, null)
+              a.a.createElement(D, null)
             )
           )
         ),
-        U = document.querySelector("#root");
-      !0 === U.hasChildNodes()
-        ? l.a.preloadReady().then(function() {
-            Object(r.hydrate)(M, U);
-          })
-        : Object(r.render)(M, U);
+        H = document.querySelector("#root");
+      !0 === H.hasChildNodes() || Object(r.render)(F, H);
     },
     58: function(e, t, n) {
       "use strict";
@@ -366,6 +364,6 @@
         a = "HOME_SAVE_USERS";
     }
   },
-  [[147, 5, 3]]
+  [[150, 5, 3]]
 ]);
-//# sourceMappingURL=main.3bd96ba1.chunk.js.map
+//# sourceMappingURL=main.7e526a66.chunk.js.map

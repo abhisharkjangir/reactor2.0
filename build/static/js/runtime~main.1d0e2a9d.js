@@ -48,9 +48,9 @@
             return (
               i.p +
               "static/js/" +
-              ({ 1: "homepage", 2: "about" }[e] || e) +
+              ({ 1: "home", 2: "about" }[e] || e) +
               "." +
-              { 1: "2a88a64d", 2: "758ed691", 4: "f0f5536e" }[e] +
+              { 1: "ff07e3bf", 2: "3bf57900", 4: "b5bb6174" }[e] +
               ".chunk.js"
             );
           })(e)),
@@ -131,4 +131,4 @@
   var l = c;
   r();
 })([]);
-//# sourceMappingURL=runtime~main.0b03e310.js.map
+//# sourceMappingURL=runtime~main.1d0e2a9d.js.map
