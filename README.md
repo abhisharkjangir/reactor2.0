@@ -1,6 +1,6 @@
 # Reactor 2.0
 
-### Live @ https://reactor.imabhi.in/
+### Live @ http://reactor.abhijangir.me/
 
 ### Features
 
